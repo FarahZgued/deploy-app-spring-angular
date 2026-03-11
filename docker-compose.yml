@@ -1,11 +1,19 @@
 version: "3.3"
 services:
   angular-app:
+<<<<<<< HEAD
     build: "./angular-app"  # ou "./angular-app" selon le nom du dossier
     ports:
       - "0.0.0.0:4200:80"      
   spring-boot-app:
     build: "./springboot/app"
+=======
+    image: farahzgued/angular-app:latest
+    ports:
+      - "0.0.0.0:4200:80"      
+  spring-boot-app:
+    image: farahzgued/springboot-app:latest
+>>>>>>> c6d59188513ce88d795aa3673addc4cad4fdb426
     ports:
       - "0.0.0.0:8081:8081"
     environment:
